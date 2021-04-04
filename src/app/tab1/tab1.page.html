@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      WELCOME
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+    <ion-card>
+      <ion-grid *ngIf="weather">
+        <ion-row>
+          <ion-col col-7 offset-2>
+            <h2 class="location">{{weather.name}}, PA</h2>
+            <div class="icon">
+              <img height="125px" width="125px" src="https://openweathermap.org/img/w/{{weather.weather['0'].icon}}.png" alt="">
+            </div>
+            <h3 class="description">{{weather.weather['0'].description}}</h3>
+            <h1 class="temp">Temp: {{ getTemp(weather.main.temp) }}&deg;F</h1>
+            <h1 class="sunrise">Sunrise: {{ convertUnix(weather.sys.sunrise) }} AM</h1>
+            <h1 class="sunset">Sunset: {{ convertUnix(weather.sys.sunset) }} PM</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-content>
+      <ion-slides pager="false" [options]="slideOpts">
+        <ion-slide style="background-color: white;">
+            <img class="container" src="assets/weather.jpg" style="width:100%; height:10%">
+            <h1 class="top-align">Come Prepared</h1>
+            <p class="bottom-align">Make sure you have the right gear packed to deal with the weather and hunting conditions. Always pack additional supplies in case of an emergency.</p>
+        </ion-slide>
+        <ion-slide style="background-color: white;">
+           <img class="container" src="assets/doe.jpeg" style="width:100%; height:10%">
+            <h1 class="top-align">Hunt Doe During Rut</h1>
+            <p class="bottom-align">If you see a doe during rut, you are in luck. Buck are solely concerned with mating and are likely not far behind. Be patient and wait for your shot.</p>
+        </ion-slide>
+        <ion-slide style="background-color: white;">
+           <img class="container" src="assets/rattle.jpg" style="width:100%; height:10%">
+            <h1 class="top-align">Make Noise</h1>
+            <p class="bottom-align">During rut, buck are often more responsive to calls. Do not be afraid to utilize grunts, bleats, or rattling antlers to get their attention.</p>
+        </ion-slide>
+        <ion-slide style="background-color: white;">
+            <img class="container" src="assets/practice.jpg" style="width:100%; height:10%">
+            <h1 class="top-align">Practice</h1>
+            <p class="bottom-align">Practice makes perfect. It is critical that you practice with your gear before you need to use it in the field. Proper training leads to successful hunts.</p>
+        </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
+
+  
 </ion-content>

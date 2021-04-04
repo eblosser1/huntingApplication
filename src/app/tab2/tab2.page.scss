@@ -1,0 +1,63 @@
+ion-title {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+ion-item {
+    display: block;
+    margin: 40px 25px;
+}
+
+ion-card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    --background: #8fc1e3;
+}
+
+ion-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    border: 5px solid #314230;
+    background-color: #FFFFFF;
+}
+
+.icon {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+form {
+    text-align: center;
+}
+
+ion-list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+ion-grid {
+    padding-top: 0px;
+}

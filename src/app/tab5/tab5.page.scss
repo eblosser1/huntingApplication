@@ -1,0 +1,35 @@
+ion-title {
+    text-align: center;
+    font-size: 30px;
+}
+ion-content {
+    overflow-y: auto;
+}
+
+div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card {
+    padding: 20px 20px;
+}
+
+.welcome {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.writeUp {
+    text-align: left;
+    text-indent: 2.0em;
+    color: black;
+}
+
+ion-label {
+    font-weight: bold;
+}
+
+ion-card {
+    --background: #bae0c3; 
+}

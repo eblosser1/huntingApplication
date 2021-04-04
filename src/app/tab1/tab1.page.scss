@@ -1,0 +1,95 @@
+ion-content {
+    background-color:rgb(54, 73, 50);
+}
+
+ion-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px;
+
+}
+
+ion-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    border: 5px solid #314230;
+    background-color: #FFFFFF;
+  }
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.logo {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div {
+    text-align: center;
+}
+
+ion-card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    --background: #8fc1e3; 
+}
+
+ion-slide {
+    border: 5px solid #314230;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.top-align {
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bottom-align {
+    position: absolute;
+    text-align: left;
+    text-indent: 2.0em;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+}

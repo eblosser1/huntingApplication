@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      HUNTING APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <img  height="300px" width="300px" src="assets/logo.png" alt="Do not worry about the logo, focus on hunting.">
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/signup']" expand="block" color="primary">Register</ion-button>
+        <br>
+        <br>
+        <ion-button [routerLink]="['/login']" expand="block" color="warning">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
